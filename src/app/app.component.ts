@@ -18,4 +18,10 @@ export class AppComponent {
   updateData() {
     this.data = Math.floor(Math.random() * 1012234250) + 1;
   }
+  userDetails = [
+    { name: "Asad", email: "asad@test.com" },
+    { name: "bilal", email: "bilal@test.com" },
+    { name: "sam", email: "sam@test.com" },
+    { name: "khalid", email: "khalid@test.com" }
+  ];
 }

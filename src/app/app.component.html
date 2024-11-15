@@ -10,3 +10,6 @@
 <!-- Parent to child data -->
 <app-child [item]="data"></app-child>
 <button (click)="updateData()">Update Number</button>
+<ul *ngFor="let user of userDetails">
+  <app-child [item_1]="user"></app-child>
+</ul>
