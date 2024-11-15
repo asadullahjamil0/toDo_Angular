@@ -14,4 +14,8 @@ export class AppComponent {
   removeTask(id: number) {
     this.list = this.list.filter(item => item.id !== id)
   }
+  data = 10;
+  updateData() {
+    this.data = Math.floor(Math.random() * 1012234250) + 1;
+  }
 }

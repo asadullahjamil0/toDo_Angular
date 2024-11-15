@@ -6,3 +6,7 @@
 <ul *ngFor="let item of list">
   <li>{{item.name}}<button (click)="removeTask(item.id)">Remove</button></li>
 </ul>
+
+<!-- Parent to child data -->
+<app-child [item]="data"></app-child>
+<button (click)="updateData()">Update Number</button>
